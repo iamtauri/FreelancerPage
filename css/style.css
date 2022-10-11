@@ -1,0 +1,247 @@
+/* Configuración global */
+:root {
+    --white: #FFFFFF;
+    --dark: #11434B;
+    --primary: #C4D3D7;
+    --second: #4898B0;
+    --gray: #616060;
+    --littlewhite: #fafafa;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Globales*/
+html {
+    font-size: 62.5%;    
+    box-sizing: border-box; /* Este es un hack para box model*/
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--lithe_white) 0%, var(--white));
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: var(--second);
+    color: var(--white);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    width: 70%;
+    text-align: center;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.shadow {
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.5);
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* Tipografía */
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Títulos */
+.title span {
+    font-size: 2rem;
+}
+
+/* Utilidades */
+.navbar_bg {
+    background-color: var(--second);
+}
+
+.w100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-right {
+    justify-content: flex-end;
+}
+
+/* Navegación principal */
+.main_navbar {
+    display: flex;
+    flex-direction: column;    
+}
+
+.main_navbar a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.main_navbar a:hover, .button:hover {
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+/* Contenido hero */
+.hero {
+    background-image: url(../media/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    /* Esto alineará los elementos horizontal y verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container h2, .hero-container p {
+    color: var(--white);
+}
+
+/* Servicios */
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h3 {
+    color: var(--second);
+    font-weight: bold;
+}
+
+.service p {
+    line-height: 2;
+    text-align: center;
+}
+
+.service .icons {
+    height: 10rem;
+    width: 10rem;
+    align-items: center;
+    background-color: var(--dark);
+    border-radius: 50%;
+    display: flex;    
+    color: var(--white);    
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contacto */
+.form {
+    background-color: var(--dark);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.form fieldset {
+    border: none;
+}
+
+.form legend {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.item {
+    margin-bottom: 1rem;
+}
+
+.item label {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.item textarea {
+    height: 20rem;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Responsive Web Desing */
+@media (min-width: 768px) {
+    .main_navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+
+    .w100 {
+        width: auto;
+    }
+
+    .form-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+
+    .item:nth-child(3), .item:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+}
