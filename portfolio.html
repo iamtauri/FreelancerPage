@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="media/icon.png" type="image/x-icon">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Taurino González <span>Freelancer</span></h1>
+    </header>
+
+    <div class="navbar_bg">
+        <nav class="main_navbar container">
+            <a href="index.html">Inicio</a>
+            <a href="">Sobre Mí</a>
+            <a href="#services">Mis Servicios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </div>
+
+    <main>
+        <h2>Mi Portafolio</h2>
+        <div class="grid">            
+            <h3>Coberturas Especiales</h3>
+            <section class="portfolio">    
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/imperdible/jalisco-talent-land-2022-y-sus-nuevas-tierras/">
+                        <img src="media/img_01.jpg" alt="main image">
+                        <p>Jalisco Talent Land 2022 y sus nuevas tierras</p>
+                    </a>
+                </div>
+
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/developer/que-es-la-ciencia-de-datos-en-la-medicina/">
+                        <img src="media/img_02.jpg" alt="main image">
+                        <p>¿Qué es la ciencia de datos en la medicina?</p>
+                    </a>
+                </div>
+
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/developer/un-recorrido-por-developer-channel-el-canal-de-los-talentos/">
+                        <img src="media/img_03.png" alt="main image">
+                        <p>Un recorrido por Developer Channel, el canal de los Talentos</p>
+                    </a>
+                </div>
+            </section>
+
+            <h3>Contenidos Evergreen</h3>
+            <section class="portfolio">                
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/developer/seguridad-informatica/como-detectar-y-eliminar-virus-del-ordenador-sin-programas/">
+                        <img src="media/img_04.jpg" alt="main image">
+                        <p>¿Cómo detectar y eliminar virus del ordenador sin programas?</p>
+                    </a>
+                </div>
+
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/future/realidad-virtual-aumentada-y-mixta-cual-es-cual/">
+                        <img src="media/img_05.jpg" alt="main image">
+                        <p>Realidad Virtual, Aumentada y Mixta, ¿cuál es cuál?</p>
+                    </a>
+                </div>
+
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/business/chatbot-que-es-y-para-que-sirve/">
+                        <img src="media/img_06.png" alt="main image">
+                        <p>Chatbot: ¿qué son y para qué sirven?</p>
+                    </a>
+                </div>
+            </section>
+
+            <h3>Tendencias</h3>
+            <section class="portfolio">                
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/developer/inteligencia-artificial/la-inteligencia-artificial-capaz-de-diagnosticar-alzheimer/">
+                        <img src="media/img_07.jpg" alt="main image">
+                        <p>La intelitencia artificial capaz de diágnosticar Alzheimer</p>
+                    </a>
+                </div>
+
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/developer/inteligencia-artificial/elon-musk-el-robot-que-descargara-nuestras-personalidades/">
+                        <img src="media/img_08.jpg" alt="main image">
+                        <p>Elon Musk: el robot que descargará nuesras personalidades</p>
+                    </a>
+                </div>
+
+                <div class="portfolio__item">
+                    <a href="https://www.talent-republic.tv/future/el-robot-del-futuro-que-cazara-oxigeno/">
+                        <img src="media/img_09.jpg" alt="main image">
+                        <p>El robot del futuro que cazará oxigeno</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section>            
+        <a name="contact"></a>
+        <h2>Contacto</h2>
+        <form action="" class="form">
+            <fieldset>
+                <legend>Llene el siguiente formulario para ponernos en contacto</legend>
+                <div class="form-items">
+                    <div class="item">
+                        <label for="">Nombre</label>
+                        <input class="input-text" type="text" placeholder="Taurino González" required>
+                    </div>
+
+                    <div class="item">
+                        <label for="">Telefóno</label>
+                        <input class="input-text" type="tel" placeholder="0987654321" required max="10">
+                    </div>
+
+                    <div class="item">
+                        <label for="">Correo electrónico</label>
+                        <input class="input-text" type="email" placeholder="su-correo@dominio.com" required>
+                    </div>
+
+                    <div class="item">
+                        <label for="">Mensaje</label>
+                        <textarea class="input-text" cols="30" rows="10" required placeholder="¿En qué puedo ayudarle?"></textarea>
+                    </div>
+                </div>
+                <div class="align-right flex">
+                    <input class="button w100" type="submit" value="¡Hagamos equipo!">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. 2022. Taurino González</p>
+    </footer>
+</body>
+</html>
