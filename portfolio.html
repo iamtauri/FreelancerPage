@@ -17,22 +17,26 @@
 
 <body>
     <header>
-        <h1 class="title">Taurino González <span>Freelancer</span></h1>
+        <a href="index.html">
+            <h1 class="title">Taurino González <span>Freelancer</span></h1>
+        </a>
+        
     </header>
 
     <div class="navbar_bg">
         <nav class="main_navbar container">
-            <a href="index.html">Inicio</a>
-            <a href="">Sobre Mí</a>
-            <a href="#services">Mis Servicios</a>
+            <a href="#special">Coberturas especiales</a>
+            <a href="#evergreen">Contenido Evergreen</a>
+            <a href="#trends">Tendencias</a>
             <a href="#contact">Contacto</a>
         </nav>
     </div>
 
-    <main>
+    <main class="container shadow">
         <h2>Mi Portafolio</h2>
-        <div class="grid">            
-            <h3>Coberturas Especiales</h3>
+        <div class="grid">                    
+            <a name="special"></a>    
+            <h3>~ Coberturas Especiales ~</h3>                        
             <section class="portfolio">    
                 <div class="portfolio__item">
                     <a href="https://www.talent-republic.tv/imperdible/jalisco-talent-land-2022-y-sus-nuevas-tierras/">
@@ -56,7 +60,9 @@
                 </div>
             </section>
 
-            <h3>Contenidos Evergreen</h3>
+            <br>
+            <a name="evergreen"></a>
+            <h3>~ Contenidos Evergreen ~</h3>            
             <section class="portfolio">                
                 <div class="portfolio__item">
                     <a href="https://www.talent-republic.tv/developer/seguridad-informatica/como-detectar-y-eliminar-virus-del-ordenador-sin-programas/">
@@ -80,7 +86,9 @@
                 </div>
             </section>
 
-            <h3>Tendencias</h3>
+            <br>
+            <a name="trends"></a>
+            <h3>~ Tendencias ~</h3>
             <section class="portfolio">                
                 <div class="portfolio__item">
                     <a href="https://www.talent-republic.tv/developer/inteligencia-artificial/la-inteligencia-artificial-capaz-de-diagnosticar-alzheimer/">
@@ -104,41 +112,41 @@
                 </div>
             </section>
         </div>
+
+        <section>            
+            <a name="contact"></a>
+            <h2>Contacto</h2>
+            <form action="" class="form">
+                <fieldset>
+                    <legend>Llene el siguiente formulario para ponernos en contacto</legend>
+                    <div class="form-items">
+                        <div class="item">
+                            <label for="">Nombre</label>
+                            <input class="input-text" type="text" placeholder="Taurino González" required>
+                        </div>
+    
+                        <div class="item">
+                            <label for="">Telefóno</label>
+                            <input class="input-text" type="tel" placeholder="0987654321" required max="10">
+                        </div>
+    
+                        <div class="item">
+                            <label for="">Correo electrónico</label>
+                            <input class="input-text" type="email" placeholder="su-correo@dominio.com" required>
+                        </div>
+    
+                        <div class="item">
+                            <label for="">Mensaje</label>
+                            <textarea class="input-text" cols="30" rows="10" required placeholder="¿En qué puedo ayudarle?"></textarea>
+                        </div>
+                    </div>
+                    <div class="align-right flex">
+                        <input class="button w100" type="submit" value="¡Hagamos equipo!">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
-
-    <section>            
-        <a name="contact"></a>
-        <h2>Contacto</h2>
-        <form action="" class="form">
-            <fieldset>
-                <legend>Llene el siguiente formulario para ponernos en contacto</legend>
-                <div class="form-items">
-                    <div class="item">
-                        <label for="">Nombre</label>
-                        <input class="input-text" type="text" placeholder="Taurino González" required>
-                    </div>
-
-                    <div class="item">
-                        <label for="">Telefóno</label>
-                        <input class="input-text" type="tel" placeholder="0987654321" required max="10">
-                    </div>
-
-                    <div class="item">
-                        <label for="">Correo electrónico</label>
-                        <input class="input-text" type="email" placeholder="su-correo@dominio.com" required>
-                    </div>
-
-                    <div class="item">
-                        <label for="">Mensaje</label>
-                        <textarea class="input-text" cols="30" rows="10" required placeholder="¿En qué puedo ayudarle?"></textarea>
-                    </div>
-                </div>
-                <div class="align-right flex">
-                    <input class="button w100" type="submit" value="¡Hagamos equipo!">
-                </div>
-            </fieldset>
-        </form>
-    </section>
 
     <footer class="footer">
         <p>Todos los derechos reservados. 2022. Taurino González</p>

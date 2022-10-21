@@ -23,12 +23,19 @@ html {
 body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    background-image: linear-gradient(to top, var(--lithe_white) 0%, var(--white));
+    /* background-image: linear-gradient(to top, var(--lithe_white) 0%, var(--white)); */
+    background-color: 	#e4e1d5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
 }
 
 .container {
     max-width: 120rem;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .button {
@@ -246,7 +253,6 @@ h1, h2, h3 {
 /* Portafolio */
 .portfolio {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     width: auto;
 }
@@ -262,7 +268,7 @@ h1, h2, h3 {
 
 .portfolio img {
     border-radius: 2%;
-    width: auto;
+    max-width: 100%;
 }
 
 .portfolio p {
